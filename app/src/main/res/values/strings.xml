@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">I NEED HEALING Clicker</string>
+
+    <!-- GAME DATA -->
+    <string name="game_data" translatable="false">game_data</string>
+    <string name="game_data_i_need_healings" translatable="false">i_need_healings</string>
+    <string name="game_data_critical_health_meter" translatable="false">critical_health_meter</string>
+    <string name="game_data_critical_health_time" translatable="false">critical_health_time</string>
+    <string name="game_data_shop_prefix" translatable="false">shop_</string>
+    <string name="game_data_shop_entry_set" translatable="false">shop_entry_set</string>
+    <string name="game_data_shop_last_category" translatable="false">last_shop_category</string>
+
+    <!-- SHOp DATA -->
+    <string name="shop_category_autoclickers">Autoclickers</string>
+    <string name="sitem_autoclicker_training_bot">Training Bot</string>
+
+    <!-- TRANSLATIONS -->
+    <string name="loading_message_why">Why does this loading screen even exists? There\'s nothing to load!</string>
+    <string name="loading_message_test">1… 2… 3… Test! Can you hear me?</string>
+    <string name="loading_message_try_overwatch">Try Overwatch you gonna be prepared!</string>
+    <string name="loading_message_for_genjis">For genjis!</string>
+    <string name="loading_message_pro_tip">Already tried to click the gray animal?</string>
+
+    <string-array name="loading_messages">
+        <item>@string/loading_message_why</item>
+        <item>@string/loading_message_try_overwatch</item>
+        <item>@string/loading_message_test</item>
+        <item>@string/loading_message_pro_tip</item>
+        <item>@string/loading_message_for_genjis</item>
+        <item>@string/loading_message_protect</item>
+        <item>@string/loading_message_need_healing</item>
+    </string-array>
+    <string name="loading_message_protect">Protect your healer!</string>
+    <string name="loading_message_need_healing">\"I need healing!\" - certainly a genji main</string>
+    <string name="settings_reset">Reset</string>
+    <string name="shop_category_upgrades">Upgrades</string>
+    <string name="sitem_autoclicker_training_bot_desc">A cute robot!</string>
+    <string name="sitem_autoclicker_venom_mine">Venom Mine</string>
+    <string name="sitem_autoclicker_venom_mine_desc">Oh, poisonous!</string>
+    <string name="sitem_upgrade_small_health_pack">Small Health Pack</string>
+    <string name="sitem_upgrade_small_health_pack_desc">Healing! But not very much...</string>
+    <string name="sitem_upgrade_large_health_pack">Large Health Pack</string>
+    <string name="sitem_upgrade_large_health_pack_desc">A little bit more!</string>
+
+    <string-array name="numbers">
+        <item>K</item>
+        <item>Mill</item>
+        <item>Bill</item>
+        <item>Trill</item>
+        <item>Quad</item>
+        <item>Quint</item>
+    </string-array>
+</resources>

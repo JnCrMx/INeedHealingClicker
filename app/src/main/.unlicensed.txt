@@ -1,0 +1,3 @@
+res/font/bignoodletoo.ttf -> http://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.ttf (https://www.reddit.com/r/Overwatch/comments/4j954c/overwatch_fonts_italic_and_regular/)
+res/drawable/ic_settings.xml -> ?
+res/raw/i_need_healing.ogg -> https://overwatch.gamepedia.com/File:Genji_-_I_need_healing.ogg

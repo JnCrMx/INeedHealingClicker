@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">I NEED HEALING Clicker</string>
+
+    <string name="loading_message_why">Warum gibt es diesen Ladebildschirm überhaupt? Es gibt noch gar nichts zu laden!</string>
+    <string name="loading_message_test">1... 2... 3... Test! Kannst du mich hören?</string>
+    <string name="loading_message_pro_tip">Schon mal probiert auf das graue Tier zu klicken?</string>
+    <string name="loading_message_for_genjis">Für Genjis!</string>
+    <string name="loading_message_try_overwatch">Versuch mal Overwatch zu spielen, du bist gut vorbereitet!</string>
+    <string name="loading_message_protect">Beschütze deinen Heiler!</string>
+    <string name="loading_message_need_healing">\"I need healing!\" - sicherlich ein Genji Main</string>
+    <string name="settings_reset">Zurücksetzen</string>
+    <string name="shop_category_autoclickers">Autoklicker</string>
+    <string name="sitem_autoclicker_training_bot">Trainingsbot</string>
+    <string name="shop_category_upgrades">Verbesserungen</string>
+    <string name="sitem_autoclicker_training_bot_desc">Ein niedlicher Roboter!</string>
+    <string name="sitem_autoclicker_venom_mine">Giftmine</string>
+    <string name="sitem_autoclicker_venom_mine_desc">Oh, giftig!</string>
+    <string name="sitem_upgrade_small_health_pack">Kleines Heilungspacket</string>
+    <string name="sitem_upgrade_small_health_pack_desc">Heilung! Aber nicht wirklich viel...</string>
+    <string name="sitem_upgrade_large_health_pack">Großes Heilungspacket</string>
+    <string name="sitem_upgrade_large_health_pack_desc">Ein kleines Bisschen mehr!</string>
+</resources>
