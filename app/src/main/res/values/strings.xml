@@ -10,7 +10,7 @@
     <string name="game_data_shop_entry_set" translatable="false">shop_entry_set</string>
     <string name="game_data_shop_last_category" translatable="false">last_shop_category</string>
 
-    <!-- SHOp DATA -->
+    <!-- SHOP DATA -->
     <string name="shop_category_autoclickers">Autoclickers</string>
     <string name="sitem_autoclicker_training_bot">Training Bot</string>
 
@@ -38,11 +38,13 @@
     <string name="sitem_autoclicker_venom_mine">Venom Mine</string>
     <string name="sitem_autoclicker_venom_mine_desc">Oh, poisonous!</string>
     <string name="sitem_upgrade_small_health_pack">Small Health Pack</string>
-    <string name="sitem_upgrade_small_health_pack_desc">Healing! But not very much...</string>
+    <string name="sitem_upgrade_small_health_pack_desc">Healing! But not very much…</string>
     <string name="sitem_upgrade_large_health_pack">Large Health Pack</string>
     <string name="sitem_upgrade_large_health_pack_desc">A little bit more!</string>
 
+    <!-- NUMBER PREFIXES -->
     <string-array name="numbers">
+        <item/><!-- Empty item for numbers from 0 to 999 (no prefix) -->
         <item>K</item>
         <item>Mill</item>
         <item>Bill</item>
