@@ -22,8 +22,8 @@ public class GameData
 
 	public boolean critical;
 
-	public int critialHealthMeter;
-	public int critialHealthTime;
+	public int criticalHealthMeter;
+	public int criticalHealthTime;
 	public BigDecimal iNeedHealingsPerSecond = BigDecimal.ZERO;
 	public int lastShopCategory;
 	public Map<ShopItem, Integer> shopItemCountMap = new HashMap<>();
@@ -39,9 +39,9 @@ public class GameData
 				iNeedHealings.toPlainString());
 
 		editor.putInt(activity.getString(R.string.game_data_critical_health_meter),
-				critialHealthMeter);
+				criticalHealthMeter);
 		editor.putInt(activity.getString(R.string.game_data_critical_health_time),
-				critialHealthTime);
+				criticalHealthTime);
 
 		ArraySet<String> shopEntries = new ArraySet<>();
 		for(Map.Entry<ShopItem, Integer> entry : shopItemCountMap.entrySet())
@@ -64,9 +64,9 @@ public class GameData
 	{
 		iNeedHealings = new BigDecimal(activity.gameData.getString(
 				activity.getString(R.string.game_data_i_need_healings), "0"));
-		critialHealthMeter = activity.gameData.getInt(
+		criticalHealthMeter = activity.gameData.getInt(
 				activity.getString(R.string.game_data_critical_health_meter), 0);
-		critialHealthTime = activity.gameData.getInt(
+		criticalHealthTime = activity.gameData.getInt(
 				activity.getString(R.string.game_data_critical_health_time), 0);
 
 		shopItemCountMap.clear();
@@ -97,20 +97,20 @@ public class GameData
 
 	public void tick()
 	{
-		if(critialHealthTime == 0)
+		if(criticalHealthTime == 0)
 		{
-			critialHealthMeter++;
-			if(critialHealthMeter >= (1000 / GameThread.TIME_PER_TICK) * 60)
+			criticalHealthMeter++;
+			if(criticalHealthMeter >= (1000 / GameThread.TIME_PER_TICK) * 60)
 			{
-				critialHealthMeter = 0;
-				critialHealthTime = (1000 / GameThread.TIME_PER_TICK) * 10;
+				criticalHealthMeter = 0;
+				criticalHealthTime = (1000 / GameThread.TIME_PER_TICK) * 10;
 				critical = true;
 			}
 		}
 		else
 		{
-			critialHealthTime--;
-			if(critialHealthTime == 0)
+			criticalHealthTime--;
+			if(criticalHealthTime == 0)
 			{
 				critical = false;
 			}

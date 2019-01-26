@@ -142,7 +142,7 @@ public class MainScreen extends GameScreen
 			canvas.drawColor(resources.background);
 		}
 
-		//Background speechbubbles
+		//Background speech bubbles
 		synchronized(speechBubbleSprites)
 		{
 			for(SpeechBubbleSprite sprite : speechBubbleSprites)
@@ -188,9 +188,9 @@ public class MainScreen extends GameScreen
 		canvas.drawText(perSecond, textX, textY, textPaint);
 
 		//Critical health meter
-		if(data.critialHealthTime == 0)
+		if(data.criticalHealthTime == 0)
 		{
-			int criticalWidth = (int) ((double) data.critialHealthMeter / (1000 / GameThread.TIME_PER_TICK * 60.0) * (double) getWidth());
+			int criticalWidth = (int) ((double) data.criticalHealthMeter / (1000 / GameThread.TIME_PER_TICK * 60.0) * (double) getWidth());
 			int criticalHeight = 10;
 			int criticalY = textY + 25;
 
@@ -201,7 +201,7 @@ public class MainScreen extends GameScreen
 		}
 		else
 		{
-			int criticalWidth = (int) ((double) data.critialHealthTime / (1000 / GameThread.TIME_PER_TICK * 10.0) * (double) getWidth());
+			int criticalWidth = (int) ((double) data.criticalHealthTime / (1000 / GameThread.TIME_PER_TICK * 10.0) * (double) getWidth());
 			int criticalHeight = 10;
 			int criticalY = textY + 25;
 

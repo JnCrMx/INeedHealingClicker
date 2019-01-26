@@ -11,6 +11,7 @@ import android.support.annotation.StringRes;
 import android.support.v4.content.res.ResourcesCompat;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -25,46 +26,28 @@ public class GameResources
 	public static final int PROGRESS_COUNT = 15;
 	//preInit
 	public List<String> loadingScreenMessages;
-	public @ColorInt
-	int background;
-	public @NonNull
-	Drawable largeHealthPack;
+	public @ColorInt int background;
+	public @NonNull Drawable largeHealthPack;
 	//init
 	public LinkedList<String> numberNames;
 	public MediaPlayer iNeedHealingSound;
 	public Typeface overwatchFont;
-	public @NonNull
-	Drawable criticalBackground;
-	public @NonNull
-	Drawable vectorGenji;
-	public @NonNull
-	Drawable speechbubbleNeedLeft;
-	public @NonNull
-	Drawable speechbubbleNeedRight;
-	public @NonNull
-	Drawable speechbubbleRequireLeft;
-	public @NonNull
-	Drawable speechbubbleRequireRight;
-	public @NonNull
-	Drawable criticalSpeechbubbleNeedLeft;
-	public @NonNull
-	Drawable criticalSpeechbubbleNeedRight;
-	public @NonNull
-	Drawable criticalSpeechbubbleRequireLeft;
-	public @NonNull
-	Drawable criticalSpeechbubbleRequireRight;
-	public @NonNull
-	Drawable healingSymbol;
-	public @NonNull
-	Drawable settingsSymbol;
-	public @NonNull
-	Drawable shopSymbol;
-	public @NonNull
-	Drawable closeSymbol;
-	public @NonNull
-	Drawable upgradeSymbol;
-	public @ColorInt
-	int buttonColor;
+	public @NonNull Drawable criticalBackground;
+	public @NonNull Drawable vectorGenji;
+	public @NonNull Drawable speechBubbleNeedLeft;
+	public @NonNull Drawable speechBubbleNeedRight;
+	public @NonNull Drawable speechBubbleRequireLeft;
+	public @NonNull Drawable speechBubbleRequireRight;
+	public @NonNull Drawable criticalSpeechBubbleNeedLeft;
+	public @NonNull Drawable criticalSpeechBubbleNeedRight;
+	public @NonNull Drawable criticalSpeechBubbleRequireLeft;
+	public @NonNull Drawable criticalSpeechBubbleRequireRight;
+	public @NonNull Drawable healingSymbol;
+	public @NonNull Drawable settingsSymbol;
+	public @NonNull Drawable shopSymbol;
+	public @NonNull Drawable closeSymbol;
+	public @NonNull Drawable upgradeSymbol;
+	public @ColorInt int buttonColor;
 	public String settingsReset;
 	private MainActivity activity;
 	private Resources resources;
@@ -141,10 +124,7 @@ public class GameResources
 
 		String[] numbers = resources.getStringArray(R.array.numbers);
 		numberNames = new LinkedList<>();
-		for(int i = 0; i < numbers.length; i++)
-		{
-			numberNames.add(numbers[i]);
-		}
+		Collections.addAll(numberNames, numbers);
 		progress.incrementAndGet();
 
 		criticalBackground = loadDrawable(R.drawable.critical_background);
@@ -153,13 +133,13 @@ public class GameResources
 		vectorGenji = loadDrawable(R.drawable.ic_genji_cat);
 		progress.incrementAndGet();
 
-		speechbubbleNeedLeft = loadDrawable(R.drawable.ic_speechbubble_need_left);
+		speechBubbleNeedLeft = loadDrawable(R.drawable.ic_speechbubble_need_left);
 		progress.incrementAndGet();
-		speechbubbleNeedRight = loadDrawable(R.drawable.ic_speechbubble_need_right);
+		speechBubbleNeedRight = loadDrawable(R.drawable.ic_speechbubble_need_right);
 		progress.incrementAndGet();
-		speechbubbleRequireLeft = loadDrawable(R.drawable.ic_speechbubble_require_left);
+		speechBubbleRequireLeft = loadDrawable(R.drawable.ic_speechbubble_require_left);
 		progress.incrementAndGet();
-		speechbubbleRequireRight = loadDrawable(R.drawable.ic_speechbubble_require_right);
+		speechBubbleRequireRight = loadDrawable(R.drawable.ic_speechbubble_require_right);
 		progress.incrementAndGet();
 
 		healingSymbol = loadDrawable(R.drawable.ic_healing);

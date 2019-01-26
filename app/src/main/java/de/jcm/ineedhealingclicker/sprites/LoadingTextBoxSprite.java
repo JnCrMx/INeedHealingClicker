@@ -58,13 +58,13 @@ public class LoadingTextBoxSprite extends GameSprite
 	private static void drawTextLines(String[] lines, Canvas canvas, int x, int y, Paint paint)
 	{
 		int ty = y;
-		for(int i = 0; i < lines.length; i++)
+		for(String line : lines)
 		{
 			Rect textBounds = new Rect();
-			paint.getTextBounds(lines[i], 0, lines[i].length(), textBounds);
+			paint.getTextBounds(line, 0, line.length(), textBounds);
 			textBounds.offsetTo(x, ty);
 
-			canvas.drawText(lines[i], textBounds.left, textBounds.bottom, paint);
+			canvas.drawText(line, textBounds.left, textBounds.bottom, paint);
 			ty -= ((textBounds.top - textBounds.bottom) - 5);
 		}
 	}
@@ -83,12 +83,11 @@ public class LoadingTextBoxSprite extends GameSprite
 	{
 		LinkedList<String> lines = new LinkedList<>();
 
-		String line = text;
 		Rect textBounds = new Rect();
 
-		String[] parts = line.split(" ");
+		String[] parts = text.split(" ");
 
-		Log.d("calculateTextForBounds", "Calculating lines for string " + line);
+		Log.d("calculateTextForBounds", "Calculating lines for string " + text);
 		int current = 0;
 		while(current < parts.length)
 		{
@@ -96,29 +95,29 @@ public class LoadingTextBoxSprite extends GameSprite
 			do
 			{
 				count--;
-				String assembly = "";
+				StringBuilder assembly = new StringBuilder();
 				for(int i = 0; i < count; i++)
-					assembly = assembly + parts[current + i] + " ";
-				assembly = assembly.trim();
+					assembly.append(parts[current + i]).append(" ");
+				assembly.deleteCharAt(assembly.length() - 1);
 
-				paint.getTextBounds(assembly, 0, assembly.length(), textBounds);
+				paint.getTextBounds(assembly.toString(), 0, assembly.length(), textBounds);
 				textBounds.offsetTo(bounds.left, bounds.top);
 			}
 			while((textBounds.right > bounds.right));
 
-			String assembly = "";
+			StringBuilder assembly = new StringBuilder();
 			for(int i = 0; i < count; i++)
-				assembly = assembly + parts[current + i] + " ";
-			assembly = assembly.trim();
+				assembly.append(parts[current + i]).append(" ");
+			assembly.deleteCharAt(assembly.length() - 1);
 
-			lines.addLast(assembly);
+			lines.addLast(assembly.toString());
 
 			Log.d("calculateTextForBounds", "Line " + lines.size() + ": " + assembly);
 
 			current += count;
 			bounds.top -= ((textBounds.top - textBounds.bottom) - 5);
 		}
-		return lines.toArray(new String[lines.size()]);
+		return lines.toArray(new String[0]);
 	}
 
 	private void initText()

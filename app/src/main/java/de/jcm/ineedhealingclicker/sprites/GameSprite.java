@@ -35,7 +35,7 @@ public abstract class GameSprite
 	public float scale = 1.0f;
 
 	private boolean dead = false;
-	private boolean invisible = false;
+	private boolean visible = true;
 
 
 	public abstract void onClick(MotionEvent event, GameSurfaceView view, GameData data);
@@ -86,7 +86,7 @@ public abstract class GameSprite
 		int x = (int) event.getX();
 		int y = (int) event.getY();
 
-		if(!isInvisible())
+		if(isVisible())
 		{
 			if(contains(x, y))
 			{
@@ -95,13 +95,13 @@ public abstract class GameSprite
 		}
 	}
 
-	public boolean isInvisible()
+	public boolean isVisible()
 	{
-		return invisible;
+		return visible;
 	}
 
-	public void setInvisible(boolean invisible)
+	public void setVisible(boolean visible)
 	{
-		this.invisible = invisible;
+		this.visible = visible;
 	}
 }

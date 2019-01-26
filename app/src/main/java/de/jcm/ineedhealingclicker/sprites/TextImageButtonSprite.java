@@ -99,7 +99,7 @@ public class TextImageButtonSprite extends GameSprite
 	@Override
 	public void draw(@NonNull Canvas canvas)
 	{
-		if(!isInvisible())
+		if(isVisible())
 		{
 			canvas.drawRoundRect(box.left, box.top, box.right, box.bottom,
 					radius, radius, buttonPaint);

@@ -68,8 +68,8 @@ public class SettingsScreen extends GameScreen
 				{
 					data.iNeedHealings = BigDecimal.ZERO;
 
-					data.critialHealthTime = 0;
-					data.critialHealthMeter = 0;
+					data.criticalHealthTime = 0;
+					data.criticalHealthMeter = 0;
 					data.lastShopCategory = 0;
 
 					data.critical = false;

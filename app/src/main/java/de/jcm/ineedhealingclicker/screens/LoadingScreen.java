@@ -84,7 +84,7 @@ public class LoadingScreen extends GameScreen
 				healthPackRunnable);
 		healthPack.posX = x;
 		healthPack.posY = y;
-		healthPack.setInvisible(true);
+		healthPack.setVisible(false);
 
 		Log.i(TAG, "Checkpoint #4");
 
@@ -104,7 +104,7 @@ public class LoadingScreen extends GameScreen
 	{
 		if(loadingThread.getProgress().get() >= LoadingThread.PROGRESS_END)
 		{
-			healthPack.setInvisible(false);
+			healthPack.setVisible(true);
 		}
 	}
 
@@ -131,7 +131,7 @@ public class LoadingScreen extends GameScreen
 		textPaint.setTextSize(50);
 
 		canvas.drawText(progress + " -> " + percent + "% -> " + degrees + "°",
-				25, getHeight() / 2, textPaint);
+				25, getHeight() / 2.0f, textPaint);
 		healthPack.draw(canvas);
 	}
 

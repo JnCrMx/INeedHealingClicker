@@ -97,16 +97,16 @@ public class GenjiCatSprite extends DrawableGameSprite
 				switch(bubble)
 				{
 					case 0:
-						drawable = view.resources.speechbubbleNeedLeft;
+						drawable = view.resources.speechBubbleNeedLeft;
 						break;
 					case 1:
-						drawable = view.resources.speechbubbleNeedRight;
+						drawable = view.resources.speechBubbleNeedRight;
 						break;
 					case 2:
-						drawable = view.resources.speechbubbleRequireLeft;
+						drawable = view.resources.speechBubbleRequireLeft;
 						break;
 					case 3:
-						drawable = view.resources.speechbubbleRequireRight;
+						drawable = view.resources.speechBubbleRequireRight;
 						break;
 				}
 

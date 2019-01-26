@@ -14,7 +14,7 @@ public abstract class GameScreen
 {
 	protected GameSurfaceView gameSurfaceView;
 	protected GameResources resources;
-	protected GameData data;
+	protected final GameData data;
 	protected boolean running;
 	private boolean inForeground;
 

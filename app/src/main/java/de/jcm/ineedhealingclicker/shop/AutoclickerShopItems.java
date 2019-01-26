@@ -43,7 +43,7 @@ public enum AutoclickerShopItems implements ShopItem
 		this.descriptionId = descriptionId;
 		this.startCost = startCost;
 		this.costScale = costScale;
-		this.perTick = (perSecond / (1000 / GameThread.TIME_PER_TICK)) + 0.0025;
+		this.perTick = (perSecond / (1000.0 / (double) GameThread.TIME_PER_TICK)) + 0.0025;
 	}
 
 	public void init(GameResources resources, AtomicInteger progress)

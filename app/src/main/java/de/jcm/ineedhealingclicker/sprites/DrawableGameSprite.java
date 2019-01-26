@@ -65,7 +65,7 @@ public abstract class DrawableGameSprite extends GameSprite
 	@Override
 	public void draw(@NonNull Canvas canvas)
 	{
-		if(!isInvisible())
+		if(isVisible())
 		{
 			if(this.shouldRenderDrawable() && drawable != null)
 			{

@@ -118,7 +118,7 @@ public class SelectableImageButtonSprite extends DrawableGameSprite implements S
 	@Override
 	public void draw(@NonNull Canvas canvas)
 	{
-		if(!isInvisible())
+		if(isVisible())
 		{
 			drawable.setBounds((int) posX, (int) posY, (int) (posX + width * scale), (int) (posY + height * scale));
 

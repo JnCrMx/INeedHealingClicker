@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.MotionEvent;
 
 import java.math.BigDecimal;
@@ -121,8 +122,6 @@ public class ShopScreen extends GameScreen
 
 		for(int i = 0; i < shopItems.length; i++)
 		{
-			final int num = i;
-
 			final ShopItem item = shopItems[i];
 			final int itemCount = data.getShopItemCount(item);
 			final BigDecimal itemCost = item.getCost(itemCount);
@@ -171,6 +170,8 @@ public class ShopScreen extends GameScreen
 	@Override
 	public void onTouchEvent(MotionEvent event)
 	{
+		Log.d("ShopScreen", event.toString());
+
 		close.onTouchEvent(event, gameSurfaceView);
 
 		for(SelectableImageButtonSprite categoryButton : categoryButtonSprites)
@@ -178,9 +179,9 @@ public class ShopScreen extends GameScreen
 			categoryButton.onTouchEvent(event, gameSurfaceView);
 		}
 
-		for(int i = 0; i < shopItemCosts.length; i++)
+		for(TextImageButtonSprite shopItemCost : shopItemCosts)
 		{
-			shopItemCosts[i].onTouchEvent(event, gameSurfaceView);
+			shopItemCost.onTouchEvent(event, gameSurfaceView);
 		}
 	}
 

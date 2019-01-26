@@ -3,7 +3,7 @@
     <string name="app_name">I NEED HEALING Clicker</string>
 
     <string name="loading_message_why">Warum gibt es diesen Ladebildschirm überhaupt? Es gibt noch gar nichts zu laden!</string>
-    <string name="loading_message_test">1... 2... 3... Test! Kannst du mich hören?</string>
+    <string name="loading_message_test">1… 2… 3… Test! Kannst du mich hören?</string>
     <string name="loading_message_pro_tip">Schon mal probiert auf das graue Tier zu klicken?</string>
     <string name="loading_message_for_genjis">Für Genjis!</string>
     <string name="loading_message_try_overwatch">Versuch mal Overwatch zu spielen, du bist gut vorbereitet!</string>
@@ -17,7 +17,7 @@
     <string name="sitem_autoclicker_venom_mine">Giftmine</string>
     <string name="sitem_autoclicker_venom_mine_desc">Oh, giftig!</string>
     <string name="sitem_upgrade_small_health_pack">Kleines Heilungspacket</string>
-    <string name="sitem_upgrade_small_health_pack_desc">Heilung! Aber nicht wirklich viel...</string>
+    <string name="sitem_upgrade_small_health_pack_desc">Heilung! Aber nicht wirklich viel…</string>
     <string name="sitem_upgrade_large_health_pack">Großes Heilungspacket</string>
     <string name="sitem_upgrade_large_health_pack_desc">Ein kleines Bisschen mehr!</string>
 </resources>
