@@ -16,19 +16,16 @@ import de.jcm.ineedhealingclicker.R;
  */
 public enum AutoclickerShopItems implements ShopItem
 {
-	TRAINING_BOT(R.drawable.ic_genji_cat,
+	TRAINING_BOT(R.drawable.ic_trainingsbot,
 			R.string.sitem_autoclicker_training_bot, R.string.sitem_autoclicker_training_bot_desc,
 			100, 2.0, 1.0),
 	VENOM_MINE(R.drawable.ic_close,
 			R.string.sitem_autoclicker_venom_mine, R.string.sitem_autoclicker_venom_mine_desc,
 			1000, 2.0, 10.0);
 
-	private final @DrawableRes
-	int iconId;
-	private final @StringRes
-	int nameId;
-	private final @StringRes
-	int descriptionId;
+	private final @DrawableRes int iconId;
+	private final @StringRes int nameId;
+	private final @StringRes int descriptionId;
 	private Drawable icon;
 	private String name;
 	private String description;
